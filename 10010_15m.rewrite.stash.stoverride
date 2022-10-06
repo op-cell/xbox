@@ -1,4 +1,4 @@
-name: 10010v3
+name: 10010v3_15m
 desc: 联通余量(v3)
 
 http:
@@ -9,7 +9,7 @@ http:
     - 10010.json
   script:
     - match: ^https?:\/\/10010\.json
-      name: "10010v3_15m"
+      name: "10010v3"
       type: request
       require-body: true
       timeout: 60
