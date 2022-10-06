@@ -1,4 +1,4 @@
-name: 10010v3
+name: 10010v3_10m
 desc: 联通余量(v3)
 
 http:
@@ -16,7 +16,7 @@ http:
       # debug: true
 
 tiles:
-  - name: "10010v3"
+  - name: "10010v3_10m"
     interval: 300
     title: "联通余量"
     content: ""
@@ -25,7 +25,7 @@ tiles:
 
 cron:
   script:
-    - name: "10010v3"
+    - name: "10010v3_10m"
       cron: "*/10 * * * *" # at every 5th minute
       timeout: 60
 
