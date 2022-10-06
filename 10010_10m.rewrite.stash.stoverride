@@ -9,7 +9,7 @@ http:
     - 10010.json
   script:
     - match: ^https?:\/\/10010\.json
-      name: "10010v3"
+      name: "10010v3_10m"
       type: request
       require-body: true
       timeout: 60
