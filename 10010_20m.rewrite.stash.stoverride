@@ -9,14 +9,14 @@ http:
     - 10010.json
   script:
     - match: ^https?:\/\/10010\.json
-      name: "10010v3_20m"
+      name: "10010v3"
       type: request
       require-body: true
       timeout: 60
       # debug: true
 
 tiles:
-  - name: "10010v3_20m"
+  - name: "10010v3"
     interval: 300
     title: "联通余量"
     content: ""
@@ -25,7 +25,7 @@ tiles:
 
 cron:
   script:
-    - name: "10010v3_20m"
+    - name: "10010v3"
       cron: "*/20 * * * *" # at every 5th minute
       timeout: 60
 
