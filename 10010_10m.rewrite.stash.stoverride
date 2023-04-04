@@ -31,5 +31,5 @@ cron:
 
 script-providers:
   "10010v3":
-    url: https://raw.githubusercontent.com/xream/scripts/main/surge/modules/10010v3/10010.js
+    url: https://raw.githubusercontent.com/op-cell/xbox/main/ChinaUnicomDev/10010.js
     interval: 86400
