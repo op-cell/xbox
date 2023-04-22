@@ -18,7 +18,7 @@
         max-size: 0
       # bdyy
       - match: https:\/\/bd-api\.kuwo\.cn
-        name: bday.js
+        name: bdyy.js
         type: response
         require-body: true
         timeout: 30
