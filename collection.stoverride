@@ -11,7 +11,7 @@
         max-size: 0
       # alyp
       - match: ^https?:\/\/(api|member)\.aliyundrive\.com
-        name: alyp .js
+        name: alyp.js
         type: response
         require-body: true
         timeout: 30
