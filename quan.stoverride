@@ -1,0 +1,27 @@
+  name: vip 解锁合集
+  desc: 作者 ChuanDe, 涩涩.
+  http:
+    script:
+      # xlsp
+      - match: ^https?:\/\/(h5play|10play)\.longyuandingyi\.com url 302 https://long.longyuandingyi.com/
+        name: xlsp.js
+        type: request
+        require-body: true
+        timeout: 30
+        max-size: 0
+      # xlsp
+      - match: ^https?:\/\/(99play|99play)\.longyuandingyi\.com\/\w{3,10}\/\w{32}\/\w{32}\.m3u8\?auth_key=[\w\-]{30,50}$
+        name: xlsp.js
+        type: request
+        require-body: true
+        timeout: 30
+        max-size: 0
+    mitm:
+      - "*fuhuida*"
+      - "riyufanyi"
+
+
+  script-providers:
+    xlsp.js:
+      url: https://raw.githubusercontent.com/89996462/Quantumult-X/main/ghs/xl.js
+      interval: 86400
